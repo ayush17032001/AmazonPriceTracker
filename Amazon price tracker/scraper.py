@@ -1,4 +1,3 @@
-from pickle import TRUE
 import requests
 from bs4 import BeautifulSoup
 import smtplib
@@ -45,6 +44,6 @@ def send_mail():
     
     server.quit()
 
-while(TRUE):
+while(True):
     get_price()
     time.sleep(60*60*24*7)
